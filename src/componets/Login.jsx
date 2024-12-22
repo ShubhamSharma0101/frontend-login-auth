@@ -81,7 +81,7 @@ function Login() {
         <section className="flex min-h-screen items-center justify-center bg-gray-100">
             <ToastContainer />
             <div>
-                <img className="w-1/2" src="src/assets/Illustration.png" alt="Illustration" />
+                <img className="w-1/2" src="./src/assets/Illustration.png" alt="Illustration" />
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-md">
