@@ -11,6 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ProtectedRoute><Home/></ProtectedRoute>} />
           <Route path="/Login" element={<Login />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Router>
     </>
