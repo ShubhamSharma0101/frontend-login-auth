@@ -11,12 +11,7 @@ function Login() {
     const navigate = useNavigate();
     const [isSubmitting, setIsSubmitting] = useState(false);
 
-    useEffect(() => {
-        const authToken = localStorage.getItem('authToken');
-        if (authToken) {
-            navigate('/home');
-        }
-    }, [navigate]);
+   
 
     const togglePasswordVisibility = () => {
         setShowPassword(!showPassword);
@@ -78,10 +73,10 @@ function Login() {
     };
 
     return (
-        <section className="flex min-h-screen items-center justify-center bg-gray-100">
+        <section className="flex flex-col min-h-screen items-center justify-center bg-gray-100 sm:flex-row">
             <ToastContainer />
-            <div>
-                <img className="w-1/2" src="./public/images/Illustration.png" alt="Illustration" />
+            <div className='flex items-center justify-center'>
+                <img className="w-1/2" src="/images/Illustration.png" alt="Illustration" />
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-md">
@@ -93,11 +88,11 @@ function Login() {
                 {/* Social Media */}
                 <div className="mt-6">
                     <button className="w-full flex items-center justify-center px-4 py-2 text-sm font-medium text-gray-700 border rounded-md">
-                        <img src="./public/images/Frame 1116607310.png" alt="Google" className="w-5 h-5 mr-2" />
+                        <img src="/images/Frame 1116607310.png" alt="Google" className="w-5 h-5 mr-2" />
                         Login with Google
                     </button>
                     <button className="w-full flex items-center justify-center px-4 py-2 mt-3 text-sm font-medium text-gray-700 border rounded-md">
-                        <img src="./public/images/Frame 1116607311.png" alt="Facebook" className="w-5 h-5 mr-2" />
+                        <img src="/images/Frame 1116607311.png" alt="Facebook" className="w-5 h-5 mr-2" />
                         Login with Facebook
                     </button>
                 </div>
@@ -113,7 +108,7 @@ function Login() {
                 <form onSubmit={handleSubmit}>
                     {/* Username */}
                     <div className="flex items-center gap-4 bg-gray-200 border rounded-2xl px-2">
-                        <img src="./public/images/account_circle.png" alt="Account Icon" />
+                        <img src="/images/account_circle.png" alt="Account Icon" />
                         <div>
                             <label htmlFor="username" className="text-xs font-medium text-gray-700">
                                 Username
@@ -132,7 +127,7 @@ function Login() {
 
                     {/* Email */}
                     <div className="flex items-center gap-4 bg-gray-200 border rounded-2xl px-2 mt-4">
-                        <img src="./public/images/mail.png" alt="Mail Icon" />
+                        <img src="/images/mail.png" alt="Mail Icon" />
                         <div>
                             <label htmlFor="email" className="text-xs font-medium text-gray-700">
                                 Email
@@ -150,7 +145,7 @@ function Login() {
 
                     {/* Password */}
                     <div className="flex items-center gap-4 bg-gray-200 border rounded-2xl px-2 mt-4">
-                        <img src="./public/images/key.png" alt="Password Icon" />
+                        <img src="/images/key.png" alt="Password Icon" />
                         <div>
                             <label htmlFor="password" className="text-xs font-medium text-gray-700">
                                 Password
@@ -169,7 +164,7 @@ function Login() {
                         <img
                             onClick={togglePasswordVisibility}
                             className="hover:cursor-pointer"
-                            src="./public/images/visibility.png"
+                            src="/images/visibility.png"
                             alt="Toggle Password Visibility"
                         />
                     </div>
