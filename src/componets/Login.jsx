@@ -93,11 +93,11 @@ function Login() {
                 {/* Social Media */}
                 <div className="mt-6">
                     <button className="w-full flex items-center justify-center px-4 py-2 text-sm font-medium text-gray-700 border rounded-md">
-                        <img src="./public/images/Frame 1116607310.png" alt="Google" className="w-5 h-5 mr-2" />
+                        <img src="/images/Frame 1116607310.png" alt="Google" className="w-5 h-5 mr-2" />
                         Login with Google
                     </button>
                     <button className="w-full flex items-center justify-center px-4 py-2 mt-3 text-sm font-medium text-gray-700 border rounded-md">
-                        <img src="./public/images/Frame 1116607311.png" alt="Facebook" className="w-5 h-5 mr-2" />
+                        <img src="/images/Frame 1116607311.png" alt="Facebook" className="w-5 h-5 mr-2" />
                         Login with Facebook
                     </button>
                 </div>
@@ -113,7 +113,7 @@ function Login() {
                 <form onSubmit={handleSubmit}>
                     {/* Username */}
                     <div className="flex items-center gap-4 bg-gray-200 border rounded-2xl px-2">
-                        <img src="./public/images/account_circle.png" alt="Account Icon" />
+                        <img src="/images/account_circle.png" alt="Account Icon" />
                         <div>
                             <label htmlFor="username" className="text-xs font-medium text-gray-700">
                                 Username
@@ -132,7 +132,7 @@ function Login() {
 
                     {/* Email */}
                     <div className="flex items-center gap-4 bg-gray-200 border rounded-2xl px-2 mt-4">
-                        <img src="./public/images/mail.png" alt="Mail Icon" />
+                        <img src="/images/mail.png" alt="Mail Icon" />
                         <div>
                             <label htmlFor="email" className="text-xs font-medium text-gray-700">
                                 Email
@@ -150,7 +150,7 @@ function Login() {
 
                     {/* Password */}
                     <div className="flex items-center gap-4 bg-gray-200 border rounded-2xl px-2 mt-4">
-                        <img src="./public/images/key.png" alt="Password Icon" />
+                        <img src="/images/key.png" alt="Password Icon" />
                         <div>
                             <label htmlFor="password" className="text-xs font-medium text-gray-700">
                                 Password
@@ -169,7 +169,7 @@ function Login() {
                         <img
                             onClick={togglePasswordVisibility}
                             className="hover:cursor-pointer"
-                            src="./public/images/visibility.png"
+                            src="/images/visibility.png"
                             alt="Toggle Password Visibility"
                         />
                     </div>
