@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -11,7 +11,12 @@ function Login() {
     const navigate = useNavigate();
     const [isSubmitting, setIsSubmitting] = useState(false);
 
-   
+   useEffect(()=>{
+        const authToken = localStorage.getItem('authToken')
+        if(authToken){
+            return navigate('/')
+        }
+   },[])
 
     const togglePasswordVisibility = () => {
         setShowPassword(!showPassword);
@@ -63,7 +68,7 @@ function Login() {
             localStorage.setItem('userDetails', JSON.stringify(data));
             localStorage.setItem('authToken', JSON.stringify(data.accessToken));
             setTimeout(() => {
-                navigate('/home');
+                navigate('/');
             }, 1500);
         } catch (error) {
             console.error('Error:', error);
@@ -75,11 +80,7 @@ function Login() {
     return (
         <section className="flex flex-col min-h-screen items-center justify-center bg-gray-100 sm:flex-row">
             <ToastContainer />
-<<<<<<< HEAD
             <div className='flex items-center justify-center'>
-=======
-            <div className="flex items-center justify-center">
->>>>>>> 85a3f916bf0a69544a09b21d97a40f2f26022ec6
                 <img className="w-1/2" src="/images/Illustration.png" alt="Illustration" />
             </div>
 
