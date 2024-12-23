@@ -19,6 +19,7 @@ function Home() {
             localStorage.removeItem('authToken')
             localStorage.removeItem('userDetails')
             navigate('/')
+            location.reload();
           }
           
     return (
