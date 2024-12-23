@@ -1,5 +1,5 @@
 import React from "react"
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import { BrowserRouter as Router, Route, Routes , Navigate} from "react-router-dom"
 import Login from "./componets/Login"
 import Home from "./componets/Home"
 import ProtectedRoute from "./componets/ProtectedRoute"
