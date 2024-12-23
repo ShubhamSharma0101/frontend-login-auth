@@ -75,11 +75,7 @@ function Login() {
     return (
         <section className="flex flex-col min-h-screen items-center justify-center bg-gray-100 sm:flex-row">
             <ToastContainer />
-
             <div className='flex items-center justify-center'>
-
-            <div className="flex items-center justify-center">
-
                 <img className="w-1/2" src="/images/Illustration.png" alt="Illustration" />
             </div>
 
