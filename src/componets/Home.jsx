@@ -18,7 +18,7 @@ function Home() {
           const handleLogout = () =>{
             localStorage.removeItem('authToken')
             localStorage.removeItem('userDetails')
-            navigate('/')
+            navigate('/home')
             location.reload();
           }
           

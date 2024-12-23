@@ -14,7 +14,7 @@ function Login() {
    useEffect(()=>{
         const authToken = localStorage.getItem('authToken')
         if(authToken){
-            return navigate('/')
+            return navigate('/home')
         }
    },[])
 
