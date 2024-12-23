@@ -5,4 +5,8 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   base: '/',
+<<<<<<< HEAD
 });
+=======
+})
+>>>>>>> 85a3f916bf0a69544a09b21d97a40f2f26022ec6
